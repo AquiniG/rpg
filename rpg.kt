@@ -6,39 +6,6 @@ fun main() {
     println("Escolha a sua classe (Guerreiro/Ladino/Mago): ")
     val classe = readln()
 
-<<<<<<< HEAD
-    println("=== Ficha do Personagem===")
-    println("Nome: $nome")
-    println("Classe: $classe")
-    println("===========================")
-
-    if (classe == "Ladino") {
-        println("$nome carrega um conjunto de gazuas, ideal para abrir fechaduras.")
-    } else if (classe == "Guerreiro") {
-        println("$nome carrega uma massiva espada, forte o suficiente para quebrar portas.")
-    } else if (classe == "Mago") {
-        println("$nome carrega um grimório que contém feitiços, sendo um deles de abertura.")
-    } else {
-        println("Classe desconhecida... $nome seguirá como um aventureiro comum.")
-    }
-
-    println("Bem vindo, $nome!")
-    println("Você está diante de uma porta antiga e trancada.")
-    print("Deseja tentar abrir a fechadura com uma gazua? (Sim/Nao): ")
-    val resposta = readln()
-
-    if (resposta == "sim") {
-        val dado = (1..20).random()
-        println("$nome rola o dado e tira: $dado")
-
-    
-    if (dado == 1 ) {
-        println("FALHA CRÍTICA! Sua gazua quebra, e o barulho aparentemente acordou algo atrás da porta... ")
-    } else if (dado == 20) {
-        println("ACERTO CRÍTICO! A porta abre suavemente, e um baú dourado é revelado!")
-    } else if (dado >= 10) {
-        println("Sucesso! Você força a porta e ela cede com um rangido, revelando um baú de madeira.")
-=======
     var vida = 20 
 
     println("=== Ficha do Personagem===")
@@ -53,15 +20,9 @@ fun main() {
         println("$nome carrega uma massiva espada, forte o suficiente para amassar seus inimigos e algumas portas.")
     } else if (classe == "Mago") {
         println("$nome carrega um grimório que pode conter diversos feitiços, mas no momento apenas um.")
->>>>>>> variaveis
     } else {
         println("Classe desconhecida... $nome seguirá como um aventureiro comum.")
     }
-<<<<<<< HEAD
-} else {
-    println("$nome decide não arriscar e vira as costas para a porta.")
-}
-=======
 
     println("$nome está diante de uma enorme porta antiga de metal, que está trancada.")
     print("Deseja tentar abrir a porta? (Sim/Nao): ")
@@ -71,10 +32,9 @@ fun main() {
         val dadoPorta = (1..20).random()
         println("$nome rola o dado e tira: $dadoPorta")
 
->>>>>>> variaveis
     
     if (dadoPorta == 1 ) {
-        println("FALHA CRÍTICA! A porta desaba sem motivo aparente, e o barulho acordou algo na escuridão... ")
+        println("FALHA CRÍTICA! A porta desaba em um estrondo sem motivo aparente, e o barulho acordou algo na escuridão... ")
     } else if (dadoPorta == 20) {
         println("ACERTO CRÍTICO! $nome abre a porta abre suavemente, e um baú dourado é revelado!")
     } else if (dadoPorta >= 10) {
@@ -85,7 +45,7 @@ fun main() {
 }
 
     println("")
-    println("Além da porta, uma rosnada aparentemente de um cachorro com os olhos brilhando na escuridão... ")
+    println("De repente, uma rosnada semelhante à um cachorro com os olhos brilhando na escuridão... ")
     print("Deseja enfrentá-lo? (Sim/Não): ")
     val respostaCao = readln()
 
